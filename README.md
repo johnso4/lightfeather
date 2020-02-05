@@ -6,7 +6,7 @@ Implements an interface that uses quicksort to sort list, and display informatio
 
 These instructions will get you a copy of the project up and running on your local machine. First clone this directory.
 
-### Installing
+## Installing
 
 - Install Java sdk 13
 - Install IntelliJ community edition
