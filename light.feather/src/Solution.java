@@ -74,7 +74,7 @@ public class Solution implements SortChallenge{
     // prints out how many times each number in the list appears.
     // Each number is placed on a separate line in ascending order.
     public void printSortedFrequency(int[] list) {
-        int[] sortedList = simpleSort(list, true);
+        int[] sortedList = simpleSort(list);
         int currentNumCount = 1;
         for (int i = 0; i < sortedList.length; ++i) {
             while(i < sortedList.length - 1 && sortedList[i] == sortedList[i + 1]) {
@@ -93,7 +93,7 @@ public class Solution implements SortChallenge{
     // Returns how many unique values there are in a list.
     public int numberOfUniqueValues(int[] list) {
         int uniqueValues = 0;
-        int[] sortedList = simpleSort(list, true);
+        int[] sortedList = simpleSort(list);
         for(int i = 0; i < sortedList.length; i++) {
             while(i < sortedList.length - 1 && sortedList[i] == sortedList[i + 1]) {
                 i++;
@@ -128,7 +128,7 @@ public class Solution implements SortChallenge{
         solution.printSortedFrequency(testList);
         System.out.println("----------------------------------------------");
         System.out.println("Now testing sorting it in a ascending order");
-        int testList2[] = solution.simpleSort(testList, true);
+        int testList2[] = solution.simpleSort(testList);
         solution.printList(testList2);
         System.out.println("----------------------------------------------");
         System.out.println("Now testing sorting it in a descending order");
